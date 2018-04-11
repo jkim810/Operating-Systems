@@ -1,0 +1,55 @@
+root@Microknoppix:/media/sdc1/log# fsck.ext2 /dev/sde1
+e2fsck 1.43.3 (04-Sep-2016)
+/dev/sde1 was not cleanly unmounted, check forced.
+Pass 1: Checking inodes, blocks, and sizes
+HTREE directory inode 833953 has an invalid root node.
+Clear HTree index<y>? yes
+Inode 833953, i_size is 376832, should be 712704.  Fix<y>? yes
+Inode 833953, i_blocks is 744, should be 1400.  Fix<y>? yes
+
+Running additional passes to resolve blocks claimed by more than one inode...
+Pass 1B: Rescanning for multiply-claimed blocks
+Multiply-claimed block(s) in inode 833953: 3371169--3371182
+Multiply-claimed block(s) in inode 840117: 3371169--3371170
+Multiply-claimed block(s) in inode 840118: 3371171--3371172
+Multiply-claimed block(s) in inode 840119: 3371173--3371174
+Multiply-claimed block(s) in inode 840120: 3371175--3371176
+Multiply-claimed block(s) in inode 840121: 3371177--3371178
+Multiply-claimed block(s) in inode 840122: 3371179--3371180
+Multiply-claimed block(s) in inode 840123: 3371181--3371182
+Pass 1C: Scanning directories for inodes with multiply-claimed blocks
+Pass 1D: Reconciling multiply-claimed blocks
+(There are 8 inodes containing multiply-claimed blocks.)
+
+File /files (inode #833953, mod time Fri Oct  6 14:33:46 2017) 
+  has 14 multiply-claimed block(s), shared with 7 file(s):
+	/files/randomfile324314 (inode #840123, mod time Fri Oct  6 14:33:39 2017)
+	/files/randomfile324313 (inode #840122, mod time Fri Oct  6 14:33:39 2017)
+	/files/randomfile324312 (inode #840121, mod time Fri Oct  6 14:33:39 2017)
+	/files/randomfile324311 (inode #840120, mod time Fri Oct  6 14:33:39 2017)
+	/files/randomfile324310 (inode #840119, mod time Fri Oct  6 14:33:39 2017)
+	/files/randomfile32431 (inode #840118, mod time Fri Oct  6 14:33:39 2017)
+	/files/randomfile324304 (inode #840117, mod time Fri Oct  6 14:33:39 2017)
+Clone multiply-claimed blocks<y>? yes
+File /files/randomfile324304 (inode #840117, mod time Fri Oct  6 14:33:39 2017) 
+  has 2 multiply-claimed block(s), shared with 1 file(s):
+	/files (inode #833953, mod time Fri Oct  6 14:33:46 2017)
+Multiply-claimed blocks already reassigned or cloned.
+
+....
+
+
+/dev/sde1: ***** FILE SYSTEM WAS MODIFIED *****
+/dev/sde1: 12397/956592 files (0.0% non-contiguous), 94240/3824380 blocks
+root@Microknoppix:/media/sdc1/log# cd /media/sde1
+root@Microknoppix:/media/sde1# ll
+total 0
+root@Microknoppix:/media/sde1# umount /dev/sde1
+umount: /dev/sde1: not mounted
+root@Microknoppix:/media/sde1# mount /dev/sde1
+root@Microknoppix:/media/sde1# cd ../sde1
+root@Microknoppix:/media/sde1# ll
+total 388
+drwxr-xr-x 2 root root 376832 Oct  6 14:33 files
+drwx------ 2 root root  16384 Oct  6 14:28 lost+found
+no files in lost+found but in files

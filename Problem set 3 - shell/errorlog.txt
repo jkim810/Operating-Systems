@@ -1,0 +1,4 @@
+./mysh.sh: line 6: ll: command not found
+./mysh.sh: line 8: cd: filethatdoesnotexist: No such file or directory
+rm: missing operand
+Try 'rm --help' for more information.

@@ -1,0 +1,25 @@
+root@Microknoppix:/media/sde1# umount /dev/sde1
+umount: /dev/sde1: not mounted
+root@Microknoppix:/media/sde1# mkfs.ext2 /dev/sde1
+mke2fs 1.43.3 (04-Sep-2016)
+/dev/sde1 contains a ext2 file system
+	created on Fri Oct  6 12:31:17 2017
+Proceed anyway? (y,n) y
+Creating filesystem with 3824380 4k blocks and 956592 inodes
+Filesystem UUID: 59813bd9-ec17-4041-8793-bdb8316de056
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208
+
+Allocating group tables: done                            
+Writing inode tables: done                            
+Writing superblocks and filesystem accounting information: done   
+
+root@Microknoppix:/media/sde1# mount /dev/sde1
+root@Microknoppix:/media/sde1# umount /dev/sde1
+root@Microknoppix:/media/sde1# mount /dev/sde1 -v
+mount: /dev/sde1 mounted on /media/sde1.
+root@Microknoppix:/media/sdc1/log# debugfs -R features /dev/sde1
+debugfs 1.43.3 (04-Sep-2016)
+Filesystem features: ext_attr resize_inode dir_index filetype sparse_super large_file
+root@Microknoppix:/media/sde1# 
+ 

@@ -1,0 +1,26 @@
+root@Microknoppix:/dev# umount /dev/sdd1
+
+root@Microknoppix:/dev# mkfs.ext2 /dev/sdd1
+mke2fs 1.43.3 (04-Sep-2016)
+/dev/sdd1 contains a vfat file system
+Proceed anyway? (y,n) y
+Creating filesystem with 3824380 4k blocks and 956592 inodes
+Filesystem UUID: 3480e9fc-57cf-4ddb-87bf-85b4df00944b
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208
+
+Allocating group tables: done                            
+Writing inode tables: done                            
+Writing superblocks and filesystem accounting information: done   
+
+root@Microknoppix:/dev# debugfs -R features /dev/sdd1
+debugfs 1.43.3 (04-Sep-2016)
+Filesystem features: ext_attr resize_inode dir_index filetype sparse_super large_file
+root@Microknoppix:/dev# mount /dev/sdd1
+
+//no output of command
+root@Microknoppix:/dev# umount /dev/sdd1
+//run mount w/ option verbose
+root@Microknoppix:/dev# mount /dev/sdd1 -v
+mount: /dev/sdd1 mounted on /media/sdd1.
+

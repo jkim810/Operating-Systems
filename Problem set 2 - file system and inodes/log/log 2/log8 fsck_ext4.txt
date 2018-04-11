@@ -1,0 +1,6 @@
+root@Microknoppix:/media# fsck.ext4 /dev/sde1
+e2fsck 1.43.3 (04-Sep-2016)
+/dev/sde1: recovering journal
+Setting free inodes count to 956409 (was 956581)
+Setting free blocks count to 3737354 (was 3737699)
+/dev/sde1: clean, 183/956592 files, 87026/3824380 blocks

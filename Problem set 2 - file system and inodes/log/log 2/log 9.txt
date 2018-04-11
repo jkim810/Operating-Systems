@@ -1,0 +1,25 @@
+
+[  528.219447] usb 1-1.4: USB disconnect, device number 6
+[  528.248751] Buffer I/O error on dev sdd1, logical block 1606659, lost sync page write
+[  528.248755] JBD2: Error -5 detected when updating journal superblock for sdd1-8.
+[  528.248756] Aborting journal on device sdd1-8.
+[  528.248758] Buffer I/O error on dev sdd1, logical block 1606659, lost sync page write
+[  528.248759] JBD2: Error -5 detected when updating journal superblock for sdd1-8.
+[  529.428621] usb 1-1.4: new high-speed USB device number 7 using ehci-pci
+[  529.513372] usb 1-1.4: New USB device found, idVendor=0781, idProduct=5575
+[  529.513376] usb 1-1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  529.513377] usb 1-1.4: Product: Cruzer Glide
+[  529.513378] usb 1-1.4: Manufacturer: SanDisk
+[  529.513379] usb 1-1.4: SerialNumber: 20044731021D65F16B70
+[  529.513658] usb-storage 1-1.4:1.0: USB Mass Storage device detected
+[  529.513750] scsi host9: usb-storage 1-1.4:1.0
+[  530.516720] scsi 9:0:0:0: Direct-Access     SanDisk  Cruzer Glide     1.00 PQ: 0 ANSI: 6
+[  530.516842] sd 9:0:0:0: Attached scsi generic sg4 type 0
+[  530.517395] sd 9:0:0:0: [sdd] 30595072 512-byte logical blocks: (15.7 GB/14.6 GiB)
+[  530.520020] sd 9:0:0:0: [sdd] Write Protect is off
+[  530.520023] sd 9:0:0:0: [sdd] Mode Sense: 43 00 00 00
+[  530.521018] sd 9:0:0:0: [sdd] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[  530.531270]  sdd: sdd1
+[  530.534764] sd 9:0:0:0: [sdd] Attached SCSI removable disk
+[  532.343300] EXT4-fs (sdd1): recovery complete
+[  532.344804] EXT4-fs (sdd1): mounted filesystem with ordered data mode. Opts: (null)

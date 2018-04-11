@@ -1,0 +1,33 @@
+[ 9794.056860] usb 1-1.4: new high-speed USB device number 12 using ehci-pci
+[ 9794.145257] usb 1-1.4: New USB device found, idVendor=0781, idProduct=5575
+[ 9794.145262] usb 1-1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[ 9794.145264] usb 1-1.4: Product: Cruzer Glide
+[ 9794.145265] usb 1-1.4: Manufacturer: SanDisk
+[ 9794.145267] usb 1-1.4: SerialNumber: 20044731021D65F16B70
+[ 9794.145659] usb-storage 1-1.4:1.0: USB Mass Storage device detected
+[ 9794.145856] scsi host10: usb-storage 1-1.4:1.0
+[ 9795.148134] scsi 10:0:0:0: Direct-Access     SanDisk  Cruzer Glide     1.00 PQ: 0 ANSI: 6
+[ 9795.148290] sd 10:0:0:0: Attached scsi generic sg4 type 0
+[ 9795.148896] sd 10:0:0:0: [sde] 30595072 512-byte logical blocks: (15.7 GB/14.6 GiB)
+[ 9795.151515] sd 10:0:0:0: [sde] Write Protect is off
+[ 9795.151519] sd 10:0:0:0: [sde] Mode Sense: 43 00 00 00
+[ 9795.152505] sd 10:0:0:0: [sde] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[ 9795.162751]  sde: sde1
+[ 9795.166247] sd 10:0:0:0: [sde] Attached SCSI removable disk
+[10071.890511] usb 1-1.4: USB disconnect, device number 12
+[10073.869948] usb 1-1.4: new high-speed USB device number 13 using ehci-pci
+[10073.958368] usb 1-1.4: New USB device found, idVendor=0781, idProduct=5575
+[10073.958371] usb 1-1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[10073.958372] usb 1-1.4: Product: Cruzer Glide
+[10073.958373] usb 1-1.4: Manufacturer: SanDisk
+[10073.958374] usb 1-1.4: SerialNumber: 20044731021D65F16B70
+[10073.958740] usb-storage 1-1.4:1.0: USB Mass Storage device detected
+[10073.958880] scsi host10: usb-storage 1-1.4:1.0
+[10074.961278] scsi 10:0:0:0: Direct-Access     SanDisk  Cruzer Glide     1.00 PQ: 0 ANSI: 6
+[10074.961430] sd 10:0:0:0: Attached scsi generic sg4 type 0
+[10074.961992] sd 10:0:0:0: [sde] 30595072 512-byte logical blocks: (15.7 GB/14.6 GiB)
+[10074.964633] sd 10:0:0:0: [sde] Write Protect is off
+[10074.964637] sd 10:0:0:0: [sde] Mode Sense: 43 00 00 00
+[10074.965633] sd 10:0:0:0: [sde] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[10074.976117]  sde: sde1
+[10074.979598] sd 10:0:0:0: [sde] Attached SCSI removable disk

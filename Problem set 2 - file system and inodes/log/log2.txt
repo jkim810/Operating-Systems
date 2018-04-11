@@ -1,0 +1,16 @@
+[  248.914277] usb 1-1.4: new high-speed USB device number 7 using ehci-pci
+[  248.999380] usb 1-1.4: New USB device found, idVendor=0781, idProduct=5575
+[  248.999384] usb 1-1.4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[  248.999385] usb 1-1.4: Product: Cruzer Glide
+[  248.999386] usb 1-1.4: Manufacturer: SanDisk
+[  248.999387] usb 1-1.4: SerialNumber: 20044731021D65F16B70
+[  248.999753] usb-storage 1-1.4:1.0: USB Mass Storage device detected
+[  248.999911] scsi host9: usb-storage 1-1.4:1.0
+[  250.002165] scsi 9:0:0:0: Direct-Access     SanDisk  Cruzer Glide     1.00 PQ: 0 ANSI: 6
+[  250.002312] sd 9:0:0:0: Attached scsi generic sg4 type 0
+[  250.002876] sd 9:0:0:0: [sdd] 30595072 512-byte logical blocks: (15.7 GB/14.6 GiB)
+[  250.004636] sd 9:0:0:0: [sdd] Write Protect is off
+[  250.004640] sd 9:0:0:0: [sdd] Mode Sense: 43 00 00 00
+[  250.005634] sd 9:0:0:0: [sdd] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[  250.016024]  sdd: sdd1
+[  250.019503] sd 9:0:0:0: [sdd] Attached SCSI removable disk
